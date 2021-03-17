@@ -1,7 +1,8 @@
 {
-  "name": "nextjs",
+  "name": "profile",
   "version": "0.1.0",
   "private": true,
+  "author": "Sharath Nagaraj <sharathnraj@yahoo.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
