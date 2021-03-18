@@ -1,0 +1,25 @@
+.Section {
+  position: sticky;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  min-height: calc(var(--vh, 1vh)*100);
+  background-color: var(--color-black);
+  padding: var(--spacing-unit);
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  background-color: var(--color-blue);
+}
+
+.Section .Profile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: saturate(0) brightness(1.1);
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  left: 0;
+}

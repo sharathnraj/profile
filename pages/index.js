@@ -1,24 +1,27 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import dynamic from "next/dynamic"
+import styles from "../styles/Home.module.css"
+import Nav from "../components/nav"
+import Header from "../components/header"
 
-export default function Home() {
+const Intro = dynamic(() => import("../components/intro"))
+const About = dynamic(() => import("../components/about"))
+
+const Home = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.Home}>
       <Head>
-        <title>Sharath | Fullstack develoepr</title>
+        <title>Sharath | Fullstack developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hello
-        </h1>
-
-        <p className={styles.description}>
-          My name is Sharath Nagaraj.<br />I can magically turn designs into websites with pixel perfection.
-        </p>
+      <Nav />
+      <Header />
+      <main className={styles.Main}>
+        <Intro />
+        <About />
       </main>
-
     </div>
   )
 }
+
+export default Home
