@@ -1,7 +1,17 @@
 import SectionStyles from "../styles/Section.module.css"
 
 const About = () => (
-  <section id="about" className={SectionStyles.Section}>
+  <section
+    id="about"
+    className={SectionStyles.Section}
+    style={
+      typeof window !== "undefined" &&
+      window &&
+      window.innerHeight ?
+      {
+        height: `${window.innerHeight}px`
+      } : {}
+    }>
     <div>
       <h2>About me</h2>
       <h3>

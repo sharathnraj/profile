@@ -1,12 +1,8 @@
-import Head from "next/head"
-import dynamic from "next/dynamic"
 import styles from "../styles/Header.module.css"
-import SectionStyles from "../styles/Section.module.css"
-import Nav from "../components/nav"
 import LinkedIn from "../styles/icons/linkedin"
 import Github from "../styles/icons/github"
 
-const Header = () => (
+const Header = ({ linkedin, github }) => (
   <header className={styles.Header}>
     <div style={{ height: "48px" }} />
     <div>
