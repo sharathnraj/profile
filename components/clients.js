@@ -6,7 +6,7 @@ const Clients = ({ height }) => (
     id="clients"
     className={`${SectionStyles.Section} ${SectionStyles.Clients}`}
     style={{height: `${height}px`}}>
-    <ul className={styles.Clients}>
+    <ul className={styles.Clients} style={{height: `${height}px`}}>
       <li style={{ backgroundColor: "#004165" }}>
         <img src="/anz.png" />
         <div className={styles.ClientsProject}>
@@ -38,7 +38,7 @@ const Clients = ({ height }) => (
       <li style={{ backgroundColor: "#FFFFFF" }}>
         <img src="/quest.png" />
         <div className={styles.ClientsProject}>
-          <p><b>QuestApartments.com.au</b></p>
+          <p><b>QuestApartments</b></p>
           <p>Online search and booking engine built on Sitefinity with jQuery.</p>
         </div>
       </li>
