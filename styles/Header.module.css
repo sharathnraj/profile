@@ -5,8 +5,8 @@
   height: 100%;
   padding: 30px;
   padding: var(--spacing-unit);
-  background-color: var(--color-general);
-  color: var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,4 +30,8 @@
 .HeaderIcons svg {
   height: 24px;
   width: 24px;
+}
+
+.HeaderLinks {
+  text-decoration: underline;
 }

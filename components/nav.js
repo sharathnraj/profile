@@ -36,6 +36,20 @@ const Nav = () => {
                 <h4>About</h4>
                 <p>70% water, with barley, yeast and hops.</p>
               </li>
+              <li
+                className={styles.MenuListItem}
+                onClick={() => {
+                  document.getElementById("clients").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                  })
+                  setTimeout(() => {
+                    setIsMenuOpen(false)
+                  }, 200)
+                }}>
+                <h4>Clients</h4>
+                <p>Worked with the biggest brands.</p>
+              </li>
             </ul>
           </div>
         </div>

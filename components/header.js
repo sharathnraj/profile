@@ -29,6 +29,8 @@ const Header = ({ linkedin, github }) => (
           </a>
         </li>
       </ul>
+      <br />
+      <p>Download <a href="/Sharath_Nagaraj_Resume.pdf" download  className={styles.HeaderLinks}>my resume</a> (PDF)</p>
     </div>
   </header>
 )

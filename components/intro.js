@@ -1,17 +1,10 @@
 import SectionStyles from "../styles/Section.module.css"
 
-const Intro = ({ profile }) => (
+const Intro = ({ height }) => (
   <section
     id="intro"
-    className={`${SectionStyles.Section} ${SectionStyles.intro}`}
-    style={
-      typeof window !== "undefined" &&
-      window &&
-      window.innerHeight ?
-      {
-        height: `${window.innerHeight}px`
-      } : {}
-    }>
+    className={`${SectionStyles.Section} ${SectionStyles.Intro}`}
+    style={{ height: `${height}px`}}>
     <img src="/profile.webp" className={SectionStyles.Profile} />
   </section>
 )

@@ -10,8 +10,8 @@
   align-items: center;
 }
 
-.intro {
-  background-color: var(--color-blue);
+.Section.Intro {
+  background-color: var(--color-white);
 }
 
 .Section .Profile {
@@ -22,4 +22,12 @@
   mix-blend-mode: multiply;
   object-fit: cover;
   left: 0;
+}
+
+.Section.About {
+  position: relative;
+}
+
+.Section.Clients {
+  padding: 0;
 }

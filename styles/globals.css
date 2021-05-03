@@ -17,12 +17,14 @@ a {
 
 :root {
   --vh: 1vh;
+  --color-links: #2f9c9f;
   --color-theme: #eadeda;
   --color-general: #70798c;
-  --color-white: #bfb8ad;
-  --color-black: #0d0a0b;
+  --color-white: #eaeaea;
+  --color-black: #393433;
+  --color-highlight: #ffae23;
   --color-blue: #bcd8c1;
-  --color-red: #990b30;
+  --color-red: #b70113;
   --spacing-unit: 32px;
   --button-size: 48px;
   --button-padding: 12px;
